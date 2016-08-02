@@ -12,13 +12,15 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel=icon href="favicon.ico">
 	</head>
 	<body>
 
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/amir.jpg" alt="Profile Picture" /></spa`n>
+					<span class="image avatar"><img src="images/amir.jpg" alt="Profile Picture" /></span>
 					<h1 id="logo"><a href="#">Amir Reza Singh</a></h1>
 					<p>Motivated individual with strong background in Software Engineering </p>
 				</header>
@@ -35,8 +37,8 @@
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://github.com/Amir-Reza-Singh" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:amirrezasingh@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -55,7 +57,7 @@
 										<p>Hi there, my name is Amir and I'm a Software Engineer<br />
 										who is passionate about his field.</p>
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<p>The main purpose of this website is not only to display my Resume but also to display my knowledge by adding extra features such as "Details" and "Hide Details" button which I have created using JQuery. In this website, I have show cased some of my knowlegde in web technologies such as CSS, JQuery, and etc. There will be more soon.</p>
 								</div>
 							</section>
 
@@ -63,11 +65,11 @@
 							<section id="two">
 								<div class="container">
 									<h3>Technical Skills</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+									<p>Please hover over the title in order to view the details.</p>
+
 									<ul class="feature-icons">
-										<li class="fa-code">Web Technologies:
-										<br/>
-										<p>PHP, ASP.NET, HTML5, CSS, XML, JavaScript, Java, C#, jQuery, C, Objective-C</p>
+										<li id="wt" class="fa-code tooltip">Web Technologies:
+										<span id="wt-hover" class="tooltiptext">PHP, ASP.NET, HTML5, CSS, XML, JavaScript, jQuery</span>
 											<!--<ul>
 												<li>Testing 1</li>
 												<li>Testing 2</li>
@@ -77,12 +79,29 @@
 												<li>Testing 6</li>
 											</ul>-->
 										</li>
-										<li class="fa-cubes">Stack small boxes</li>
-										<li class="fa-book">Read books and stuff</li>
-										<li class="fa-coffee">Drink much coffee</li>
-										<li class="fa-bolt">Lightning bolt</li>
-										<li class="fa-users">Shadow clone technique</li>
+										<li id="pl" class="fa-cubes tooltip">Programing Languages:
+										<span id="pl-hover" class="tooltiptext">C#, Java, C, Objective-C</span>
+										</li>
+										<li id="ws" class="fa-book tooltip">Webserver:
+										<span id="ws-hover" class="tooltiptext">IIS 10.0</span>
+										</li>
+										<li id="ide" class="fa-coffee tooltip">IDE:
+										<span id="ide-hover" class="tooltiptext">NetBeans 8.1, Eclipse, Visual Studio (2010 - 2015),
+										MS Expression Web 4</span>
+										</li>
+										<li id="dbs" class="fa-bolt tooltip">Database:
+										<span id="dbs-hover" class="tooltiptext">MySQL 5.7, Microsoft SQL Server 2014, Oracle 11g</span>
+										</li>
+										<li id="ap" class="fa-users tooltip">Architectural Pattern:
+										<span id="ap-hover" class="tooltiptext">MVC</span>
+										</li>
+										<li id="other" class="fa-users tooltip">Other Tools/Applications:
+										<span id="other-hover" class="tooltiptext">Pivotal Tracker, GitHub, WordPress, Team Foundation Server 2015, Visual Paradigm, MS Word, MS Excel, MS Access, MS Visio, MS Project, UML</span>
+										</li>
 									</ul>
+									<input name="Details" value="Details" type="button" id="details" class="special"/>
+									<input value="Hide Details" type="button" id="hide" class="button"/>
+									
 								</div>
 							</section>
 
@@ -90,7 +109,7 @@
 							<section id="three">
 								<div class="container">
 									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<!--<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>--><p></p>
 									<div class="features">
 										<article>
 											<a href="http://econocolor.ca/Pages/Home.aspx?c=1" class="image"><img src="images/Econo Color.jpg" alt="" /></a>
@@ -121,8 +140,8 @@
 							<section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
-									<p>Hey there! I see you want to reach out to me so go ahead and fill out the form bellow and I'll get back to you as soon as possible.</p>
-									<form method="post" action="#">
+									<p>Hey there! I see you want to reach out to me... so go ahead and fill out the form bellow and I'll get back to you as soon as possible.</p>
+									<form method="post" id="form">
 										<div class="row uniform">
 											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -136,11 +155,12 @@
 										<div class="row uniform">
 											<div class="12u">
 												<ul class="actions">
-													<li><input type="submit" class="special" value="Send Message" /></li>
+													<li><input id="submit" type="submit" class="special" value="Send Message" /></li>
 													<li><input type="reset" value="Reset Form" /></li>
 												</ul>
 											</div>
 										</div>
+										<p id="returnmessage"></p>
 									</form>
 								</div>
 							</section>
@@ -498,7 +518,7 @@
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Copyright Amir Reza Singh. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
@@ -513,6 +533,73 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					var wt = $("#wt").text();
+					//var wtHover = $("#wt-hover").text();
+					var pl = $("#pl").text();
+					//var plHover = $("#pl-hover").text;
+					var ws = $("#ws").text();
+					//var wsHover = $("#ws-hover").text;
+					var ide = $("#ide").text();
+					//var ideHover = $("#ide-hover").text;
+					var dbs = $("#dbs").text();
+					//var dbsHover = $("#dbs-hover").text;
+					var ap = $("#ap").text();
+					//var apHover = $("#ap-hover").text;
+					var other = $("#other").text();
+					//var otherHover = $("#other-hover").text;
+					$("#details").click(function(){
+						$("#wt").text(wt);
+						$("#pl").text(pl);
+						$("#ws").text(ws);
+						$("#ide").text(ide);
+						$("#dbs").text(dbs);
+						$("#ap").text(ap);
+						$("#other").text(other);
+					});
+					$("#hide").click(function(){
+						location.reload();
+						//$("#wt").text("Web Technologies: ");
+						//$("#pl").text("Programing Languages: ");
+						//$("#ws").text("Webserver: ");
+						//$("#ide").text("IDE: ");
+						//$("#dbs").text("Database: ");
+						//$("#ap").text("Architectural Pattern: ");
+						//$("#other").text("Other Tools/Applications: ");
+					});
+						/*Contact Form*/
 
+						$("#submit").click(function() {
+							var name = $("#name").val();
+							var email = $("#email").val();
+							var subject = $("#subject").val();
+							var message = $("#message").val();
+							
+							$("#returnmessage").empty(); // To empty previous error/success message.
+							// Checking for blank fields.
+							if (name == '' || email == '' || subject == '') {
+								alert("Please Fill Required Fields");
+							} else {
+							// Returns successful data submission message when the entered information is stored in database.
+							$.post("contact_form.php", {
+								name1: name,
+								email1: email,
+								message1: message,
+								subject1: subject
+								}, function(data) {
+								$("#returnmessage").append(data); // Append returned message to message paragraph.
+								if (data == "Your Query has been received, We will contact you soon.") {
+								$("#form")[0].reset(); // To reset form fields on success.
+								}
+							});
+						}
+					});
+
+
+
+				});
+			</script>
 	</body>
 </html>
